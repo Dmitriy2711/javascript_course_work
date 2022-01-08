@@ -1,0 +1,141 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0 -10px 0 -10px;
+	border: 1px solid transparent;	
+}
+.wrap {
+	color: #093d58;
+	background: #f0f0f0;
+	min-width: 320px;
+	max-width: 1200px;
+	border: 1px solid transparent;
+	margin: 0 auto;
+	padding: 30px 40px;
+}
+h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.popular__wraper {
+	padding: 20px 5px 20px 5px;
+	background: white;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border: 1px solid transparent;
+}
+.popular__wraper button {
+	outline: none;
+	padding: 5px;
+	color: white;
+	border-radius: 3px;
+	background-color: #63a1c0;
+	border: none;
+	font-size: 20px;
+	transition-duration: 0.5s;
+	transition-property: transform;
+	
+	
+}
+.popular__wraper button:hover {
+	transform: scale(1.2, 1.2);
+	
+}
+.popular__img-block{
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+	width: 25%;
+
+}
+.popular__img {
+	width: 100%;
+}
+
+#hide {
+	display: flex;
+	background-color: rgb(0,40,34,0.8);
+	position: fixed;
+	top: 0;
+	left : 0;
+	width: 100%;
+	height: 100%;
+	border: 1px solid transparent;
+	display:none;
+}
+.preview-window {
+
+	position: relative;
+	align-content: top;
+	justify-content: center;
+	display: flex;
+	padding: 20px 20px 20px 20px; 
+	margin: auto;
+	background-color: white;
+	border: 1px solid transparent;
+	
+	width:95%;
+}
+.pr,
+.nx{
+	outline: none;
+	padding: 5px;
+	color: white;
+	border-radius: 3px;
+	background-color: #63a1c0;
+	border: none;
+	position: absolute;
+	font-size: 30px;
+	max-height: 50px;
+	transition-duration: 0.5s;
+	transition-property: transform;
+}
+.pr {
+	top: center;
+	left: -10px;
+}
+.nx{
+	top: center;
+	right: -10px;
+}
+.pr:hover,
+.nx:hover {
+	transform: scale(1.2, 1.2);
+}
+.viewImg {
+	position: relative;
+	padding: 0 20px 0 20px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: auto;
+	border: 1px solid transparent;
+	width :100%;
+	max-height: 100vh;
+}
+.viewImg img {
+	width:100%;
+	max-height: 100vh;
+}
+#close {
+	outline: none;
+	padding: 5px;
+	color: white;
+	border-radius: 3px;
+	background-color: #63a1c0;
+	border: none;
+	font-size: 20px;
+	z-index: 2;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	transition-duration: 0.5s;
+	transition-property: transform;
+}
+#close:hover {
+	transform: scale(1.2, 1.2);
+}
